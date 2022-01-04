@@ -7,6 +7,6 @@ mongoose.connect('mongodb://127.0.0.1:27017/taskmanagerdb')
     console.log("DN connected successfully")
 })
 .catch((err)=>{
-    console.log(err)
+    console.log("Error in db connection"+err)
 });
 module.exports = mongoose;
